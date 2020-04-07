@@ -4,14 +4,14 @@
 
 */
 //promts the user for a phrase or dificaalty
-var cOrV = prompt('Enter 0 to enter your own word, enter 1 for a random easy word, enter 2 for random meduim word, enter 3 for a random hard word, or enter 4 for a phrase').trim();
-while (cOrV != "0" && cOrV != "1" && cOrV != "2" && cOrV != "3" && cOrV != "4") {
-  cOrV = prompt('Please enter 0 to enter your own word, enter 1 for a random easy word, enter 2 for random meduim word, enter 3 for a random hard word, or enter 4 for a phrase');
+var cOrV = prompt('Enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard word, enter 4 for a phrase, or enter 5 for a 612 inside joke').trim();
+while (( cOrV.toUpperCase() != cOrV.toLowerCase() && cOrV.length <= 1) &&cOrV != "1" && cOrV != "2" && cOrV != "3" && cOrV != "4" && cOrv !="5")  {
+  cOrV = prompt('Please enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard wordenter 4 for a phrase, or enter 5 for a 612 inside joke');
 }
 
-if (cOrV == "0") {
-  var askUser = prompt('Enter a Phrase between 1 and 26 characters').trim();
-  while (askUser.length > 32 || askUser.length < 1) {
+if (cOrV.length >= 1 && cOrV.toUpperCase() != cOrV.toLowerCase() ){
+  var askUser = cOrV;
+  while (askUser.length > 32 || cOrV.length < 1) {
     askUser = prompt("Error, please try again make sure it is between 1 and 26 characters");
   }
 } else {
@@ -106,17 +106,17 @@ function draw() {
 
 //re-promts the user
 function startGame() {
-  var cvp = prompt('Enter 0 to enter your own word, enter 1 for a random easy word, enter 2 for random meduim word, enter 3 for a random hard word, or enter 4 for a phrase').trim();
-  while (cvp != "0" && cvp != "1" && cvp != "2" && cvp != "3" && cvp != "4") {
-    cvp = prompt('Please enter 0 to enter your own word, enter 1 for a random easy word, enter 2 for random meduim word, enter 3 for a random hard word, or enter 4 for a phrase');
+  var cvp = prompt('Enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard word, enter 4 for a phrase, or enter 5 for a 612 inside joke').trim();
+  while (( cvp.toUpperCase() != cvp.toLowerCase() && cvp.length <= 1) && cvp != "1" && cvp != "2" && cvp != "3" && cvp != "4" &&cvp != "5")  {
+    cvp = prompt('Please enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard word, enter 4 for a phrase, or enter 5 for a 612 inside joke');
   }
 
-  if (cvp == "0") {
-    nextPhrase = prompt('Enter a Phrase between 1 and 26 characters').trim();
+  if (cvp.length > 1  || cvp.toUpperCase() != cvp.toLowerCase()) {
+    nextPhrase = cvp;
     while (nextPhrase.length > 32 || nextPhrase.length < 1) {
       nextPhrase = prompt("Error, please try again make sure it is between 1 and 26 characters");
     }
   } else{
      difficulty = cvp;
   }
-}
+} 
