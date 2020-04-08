@@ -50,7 +50,7 @@ class Dashes {
     //will check if the last letter on the first line and the first letter in the second line are charaters
     //if they are, it will add spaces until the word is entirely on the second line
     var indexOfNeededSpace = 0;
-    while (this.splitedPhrase.length > 13 && this.splitedPhrase[12].toUpperCase() != this.splitedPhrase[12].toLowerCase() && this.splitedPhrase[13].toUpperCase() != this.splitedPhrase[13].toLowerCase()) {
+    while (this.splitedPhrase.length > 13 && this.splitedPhrase[12] != " " && this.splitedPhrase[13] != " ") {
       var replaceWithSpaces = 0;
       for (var i = 12; i > 0; i--) {
         if (this.splitedPhrase[i] != " ") {
@@ -73,7 +73,7 @@ class Dashes {
     }
     //will make sure the words btween the second and third line dont get cut off
     indexOfNeededSpace = 0;
-    while (this.splitedPhrase.length > 26 && this.splitedPhrase[25].toUpperCase() != this.splitedPhrase[25].toLowerCase() && this.splitedPhrase[26].toUpperCase() != this.splitedPhrase[26].toLowerCase()) {
+    while (this.splitedPhrase.length > 26 && this.splitedPhrase[25] != " " && this.splitedPhrase[26] != " ") {
 
       var newReplaceWithSpaces = 0;
       for (var a = 25; a > 13; a--) {
