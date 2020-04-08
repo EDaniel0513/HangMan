@@ -36,8 +36,6 @@ function setup() {
   }
   dash.spaceFix();
   dash.convertor();
-
-
 }
 
 function draw() {
@@ -55,7 +53,7 @@ function draw() {
   text("Man!!!", 70, 95)
   strokeWeight(3)
 
-  //Draws the hanger
+  //Draws the execution board
   push();
   translate(-75, 5);
   rect(125, 250, 150, 1);
@@ -65,12 +63,11 @@ function draw() {
   rect(250, 100, 1, 25);
   pop();
 
-  //Draws incorect gussses
+  //Draws incorrect gussses
   textSize(22)
   strokeWeight(1)
   text("Incorrect Guesses", 199, 40)
   strokeWeight(3)
-
   noFill();
   textSize(35);
   stroke(color(255, 255, 255));
@@ -83,10 +80,8 @@ function draw() {
   dash.displayKey();
   strokeWeight(3)
 
-  
   dash.hangTheMan();
   dash.winCheck();
-
   
   if (dash.isPlayAgain()) {
     startGame();
@@ -100,11 +95,9 @@ function draw() {
   }
 }
 
-
 //re-promts the user
 function startGame() {
  var cvp = prompt('1. Enter your own phrase, 1-26 \n 2. Easy Word \n 3. Moderate Word \n 4. Hard Word \n 5. 612 Inside Joke').trim();
-
   if (cvp.length > 1  || cvp.toUpperCase() != cvp.toLowerCase()) {
     nextPhrase = cvp;
     while (nextPhrase.length > 32 || nextPhrase.length < 1) {
