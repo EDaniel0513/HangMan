@@ -857,6 +857,8 @@ class Words {
       "You Can’t Judge a Book by Its Cover",
       "Your Guess Is as Good as Mine",
       "too close for comfort",
+      "playing with fire",
+      "fight fire with fire",
     ]
     this.insideJokes = [
       "It's mr. baer's birthday?",
