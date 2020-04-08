@@ -4,7 +4,7 @@
 
 */
 //promts the user for a phrase or dificaalty
-var cOrV = prompt('1. Enter your own phrase, 1-26 \n 2. Easy Word \n 3. Moderate Word \n 4. Hard Word \n 5. 612 Inside Joke').trim();
+var cOrV = prompt('1. Enter your own phrase, between 1 and 26 characters \n2. Easy Word \n3. Moderate Word \n4. Hard Word \n5. 612 Inside Joke').trim();
 
 if (cOrV.length >= 1 && cOrV.toUpperCase() != cOrV.toLowerCase() ){
   var askUser = cOrV;
