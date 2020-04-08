@@ -4,10 +4,7 @@
 
 */
 //promts the user for a phrase or dificaalty
-var cOrV = prompt('Enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard word, enter 4 for a phrase, or enter 5 for a 612 inside joke').trim();
-while (( cOrV.toUpperCase() != cOrV.toLowerCase() && cOrV.length <= 1) &&cOrV != "1" && cOrV != "2" && cOrV != "3" && cOrV != "4" && cOrv !="5")  {
-  cOrV = prompt('Please enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard wordenter 4 for a phrase, or enter 5 for a 612 inside joke');
-}
+var cOrV = prompt('1. Enter your own phrase, 1-26 \n 2. Easy Word \n 3. Moderate Word \n 4. Hard Word \n 5. 612 Inside Joke').trim();
 
 if (cOrV.length >= 1 && cOrV.toUpperCase() != cOrV.toLowerCase() ){
   var askUser = cOrV;
@@ -106,10 +103,7 @@ function draw() {
 
 //re-promts the user
 function startGame() {
-  var cvp = prompt('Enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard word, enter 4 for a phrase, or enter 5 for a 612 inside joke').trim();
-  while (( cvp.toUpperCase() != cvp.toLowerCase() && cvp.length <= 1) && cvp != "1" && cvp != "2" && cvp != "3" && cvp != "4" &&cvp != "5")  {
-    cvp = prompt('Please enter your own phrase or word, enter 1 for a random easy word, enter 2 for random moderate  word, enter 3 for a random hard word, enter 4 for a phrase, or enter 5 for a 612 inside joke');
-  }
+ var cvp = prompt('1. Enter your own phrase, 1-26 \n 2. Easy Word \n 3. Moderate Word \n 4. Hard Word \n 5. 612 Inside Joke').trim();
 
   if (cvp.length > 1  || cvp.toUpperCase() != cvp.toLowerCase()) {
     nextPhrase = cvp;
