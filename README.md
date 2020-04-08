@@ -1,5 +1,5 @@
 # HangMan
-hangman made by a three 15 yearolds
+hangman made by chantilly high school people.
 Abhi, Arjun and Emile worked on hangman from April 3rd to April 7th 2020.
 
 To access the game, open the index.html file in your chrome browser.
