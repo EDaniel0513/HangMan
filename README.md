@@ -1,5 +1,5 @@
 # HangMan
-hangman made by 3 chantilly high school people.
+Virtual hangman made by 3 Chantilly High School students (based in NoVA).
 Abhi, Arjun and Emile worked on hangman from April 3rd to April 7th 2020.
 
 To access the game, open the index.html file in your chrome browser.
