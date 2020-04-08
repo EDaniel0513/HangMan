@@ -3,8 +3,8 @@
   Created by: Emile, Arjun, and Abhi
 
 */
-//promts the user for a phrase or dificaalty
-var cOrV = prompt('1. Enter your own phrase, between 1 and 26 characters \n2. Easy Word \n3. Moderate Word \n4. Hard Word \n5. 612 Inside Joke').trim();
+//promts the user for a phrase or dificalty
+var cOrV = prompt('Enter a: \n 1. To enter your own phrase, between 1 and 26 characters \n 2. For an easy word \n 3. for a moderate word \n 4. for a hard word \n 5. for a 612 inside joke').trim();
 
 if (cOrV.length >= 1 && cOrV.toUpperCase() != cOrV.toLowerCase() ){
   var askUser = cOrV;
@@ -97,7 +97,7 @@ function draw() {
 
 //re-promts the user
 function startGame() {
- var cvp = prompt('1. Enter your own phrase, 1-26 \n 2. Easy Word \n 3. Moderate Word \n 4. Hard Word \n 5. 612 Inside Joke').trim();
+ var cvp = prompt('Enter a: \n 1. To enter your own phrase, between 1 and 26 characters \n 2. For an easy word \n 3. for a moderate word \n 4. for a hard word \n 5. for a 612 inside joke').trim();
   if (cvp.length > 1  || cvp.toUpperCase() != cvp.toLowerCase()) {
     nextPhrase = cvp;
     while (nextPhrase.length > 32 || nextPhrase.length < 1) {
